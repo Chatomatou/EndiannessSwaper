@@ -23,7 +23,7 @@ uint32_t swap_endianness32(const uint32_t data)
 }
 uint64_t swap_endianness64(const uint64_t data)
 {
-	uint64_t byteA = (data & 0xff00000000000000u)>> 56u; // octet 1
+    uint64_t byteA = (data & 0xff00000000000000u)>> 56u; // octet 1
     uint64_t byteB = (data & 0x00ff000000000000u)>> 40u; // octet 2
     uint64_t byteC = (data & 0x0000ff0000000000u) >> 24u; // octet 3
     uint64_t byteD = (data & 0x000000ff00000000u) >> 8u; // octet 4
